@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.price-btn {
+  background-color: rgb(225, 151, 14);
+  color: #fff;
+  font-weight: 700;
+  outline: 0;
+  border: 1px solid rgb(225, 151, 14);
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+}
+
+.countdown {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  background-color: rgb(156, 4, 4);
+  width: 22rem;
+  height: 100px;
+}
+
+.countdown span {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #fff;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.slick-slider img {
+  height: calc(100vh - 3.5rem);
+}
+
+.slick-slider .slick-dots li button::before {
+  font-size: 15px;
+}
+
+.slick-slider .slick-dots {
+  bottom: 10px;
+}
+
+/* Events and Location */
+
+.events {
+  background-color: #333;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 500px;
+  align-content: center;
+  gap: 5rem;
+  padding: 0 5rem;
+}
+
+.underline {
+  width: 80%;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.event,
+.location {
+  border: 10px double #fff;
+  /* width: 18rem; */
+  height: 300px;
+  color: #fff;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  letter-spacing: 0.3rem;
+  padding: 0 1rem;
+}
+
+.event-info h4,
+.location-info h4 {
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.event-info h3:nth-child(3),
+.location-info h3:nth-child(3) {
+  margin-top: 0.75rem;
+}
+
+/* Highlights */
+
+.highlights {
+  padding: 5rem 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.highlights .underline {
+  width: 100%;
+  background-color: rgb(158, 139, 139);
+}
+.highlights-text {
+  text-align: justify;
+}
+
+/* Price Zone */
+
+.price-zone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  height: 300px;
+}
+
+.discount-price {
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.discount-price .percentage {
+  color: rgb(210, 1, 1);
+  font-size: 7rem;
+}
+.discount-price h2 {
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.price-text .btn-info {
+  background-color: rgb(225, 151, 14);
+  color: #fff;
+  font-weight: 700;
+  outline: 0;
+  border: 1px solid rgb(225, 151, 14);
+}
+
+/* Pricing */
+
+.pricing {
+  background-color: #333;
+  height: 600px;
+  padding: 5rem 0;
+}
+
+.pricing-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  place-items: center;
+  height: 100%;
+  width: 60%;
+  margin: -15px auto;
+  column-gap: 2rem;
+}
+
+.pricing-one,
+.pricing-two,
+.pricing-three {
+  border: 2px solid rgb(225, 151, 14);
+  padding: 1.2rem 0.75rem;
+}
+
+.pricing-one h2,
+.pricing-two h2,
+.pricing-three h2 {
+  color: #fff;
+}
+
+.pricing-one h3,
+.pricing-two h3,
+.pricing-three h3 {
+  color: #fff;
+}
+
+.pricing-one .btn-info,
+.pricing-two .btn-info,
+.pricing-three .btn-info {
+  background-color: rgb(225, 151, 14);
+  color: #fff;
+  font-weight: 700;
+  outline: 0;
+  border: 1px solid rgb(225, 151, 14);
+}
+
+/* Google Map Location */
+
+/* Footer */
+
+.footer {
+  background-color: rgb(133, 9, 9);
+  height: 100px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  margin-top: -6px;
+  text-align: center;
+}
